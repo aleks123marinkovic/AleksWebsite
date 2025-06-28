@@ -8,6 +8,21 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="landing-overlay">
+    <div class="overlay-content" style="border: 2px solid red;"> <!-- Debug border, remove after testing -->
+      <div class="project-images">
+        <a href="example1.html"><img src="assets/Project1.png" alt="Project 1"></a>
+        <a href="example2.html"><img src="assets/Project2.png" alt="Project 2"></a>
+        <a href="example3.html"><img src="assets/Project3.png" alt="Project 3"></a>
+        <a href="example4.html"><img src="assets/Project4.png" alt="Project 4"></a>
+        <a href="example5.html"><img src="assets/Project5.png" alt="Project 5"></a>
+        <a href="example6.html"><img src="assets/Project6.png" alt="Project 6"></a>
+        <a href="example7.html"><img src="assets/Project7.png" alt="Project 7"></a>
+        <a href="example8.html"><img src="assets/Project8.png" alt="Project 8"></a>
+      </div>
+      <div class="center-box" id="learn-more-box">Learn more about Aleks?</div>
+    </div>
+  </div>
   <nav class="navbar">
     <div class="logo">AM</div>
     <ul class="nav-links">
@@ -82,13 +97,20 @@
         <!-- Copy and edit the above block for more projects. Replace URLs and descriptions. -->
       </div>
     </section>
+
+    <section id="cad-projects" class="section">
+      <h2>CAD Projects!</h2>
+      <div style="display: flex; gap: 32px; justify-content: center; margin-top: 1.5rem;">
+        <div><canvas id="cad-canvas-1" width="250" height="250" style="background:#222; border-radius:12px;"></canvas></div>
+        <div><canvas id="cad-canvas-2" width="250" height="250" style="background:#222; border-radius:12px;"></canvas></div>
+        <div><canvas id="cad-canvas-3" width="250" height="250" style="background:#222; border-radius:12px;"></canvas></div>
+      </div>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2024 Aleksandar Marinkovic. All rights reserved.</p>
   </footer>
-
-  <div id="threejs-canvas"></div>
   <!-- Scripts at the end of body -->
   <script src="https://cdn.jsdelivr.net/npm/three@0.146.0/build/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.146.0/examples/js/loaders/STLLoader.js"></script>
