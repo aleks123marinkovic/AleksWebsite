@@ -18,15 +18,20 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  padding-top: 64px;
 }
 
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #181818; /* or your preferred color */
+  height: 64px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background: var(--bg-alt);
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 .logo {
   font-size: 2rem;
