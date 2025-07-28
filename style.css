@@ -89,29 +89,21 @@ body {
 }
 .social-icons {
   display: flex;
+  gap: 18px;
+  margin-top: 1.2rem;
   justify-content: center;
-  gap: 1.5rem;
-  margin-top: 1rem;
 }
-.social-icons a {
-  display: inline-block;
-  width: 36px;
-  height: 36px;
-  background: var(--bg-alt);
+
+.social-icons a svg {
+  transition: transform 0.2s, box-shadow 0.2s;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.2s;
-  border: 1.5px solid var(--border);
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
-.social-icons a:hover {
-  background: var(--accent2);
-}
-.social-icons img {
-  width: 22px;
-  height: 22px;
-  filter: invert(1);
+
+.social-icons a:hover svg {
+  transform: scale(1.15);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.16);
 }
 
 main {
