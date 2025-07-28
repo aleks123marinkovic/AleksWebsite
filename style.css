@@ -1,11 +1,11 @@
 /* style.css - Modern Dark Portfolio Theme */
 
 :root {
-  --bg: #23171a;
-  --bg-alt: #2d2327;
-  --card: #31262b;
-  --accent: #ff5e5b;
-  --accent2: #feca57;
+  --bg: #ffffff;
+  --bg-alt: #ffffff;
+  --card: #ffffff;
+  --accent: #7c0000;
+  --accent2: #4164ff;
   --text: #f5f5f5;
   --text-muted: #bdbdbd;
   --border: #3a2e33;
